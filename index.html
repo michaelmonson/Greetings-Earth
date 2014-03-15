@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>Greetings Universe!</title>
+</head>
+<body>
+	<h1 ng-controller="HelloWorldCtrl">{{helloMessage}}</h1>
+	
+	<p ng-controller="HelloDescriptionCtrl">
+		<span>{{helloDescription}}</span>
+	</p>
+	
+	<script src="angular.js"></script>
+	<script>
+		function HelloWorldCtrl($scope) {
+			$scope.helloMessage = "Greetings Universe!";
+		}
+		
+		function HelloDescriptionCtrl($scope) {
+			$scope.helloDescription = "There is a theory which states that if ever anybody discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states that this has already happened.";
+		}
+	</script>
+	
+</body>
+</html>
